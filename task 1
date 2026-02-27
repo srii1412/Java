@@ -1,0 +1,107 @@
+package javaoperators;
+import java.util.*;
+
+public class hello{
+
+	public static void main(String[] args) {
+//		take two integers a and b
+		int a=10;
+		int b=15;
+		System.out.println("add:"+ (a+b));
+		System.out.println("sub:"+ (a-b));
+		System.out.println("mul:"+ (a*b));
+		System.out.println("divide:"+ (a/b));
+		System.out.println("mod/"+ (a+b));
+//		 swapping two bitwise operator
+		int c=10;
+		int d=20;
+		c^=d;
+		System.out.println("c:"+c);
+		d^=c;
+		System.out.println("d:"+c);
+		c^=d;
+		System.out.println("c:"+c);
+////		swapping with third variable
+		int f=10;
+		int g=20;
+		int temp= f;
+		f=g;
+		g=temp;
+		System.out.println("f:"+f);
+		System.out.println("g:"+g);
+////find last two digit num
+		int h=156;
+		int i=h%100;
+		System.out.println("last value:"+i);
+		find middle value
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value");
+		int num= sc.nextInt();
+		int x=(num/100)%10;
+		System.out.println("num:"+num);
+		System.out.println("sqr:"+(num*num));
+//		find last digit
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the num");
+		int y= sc.nextInt();
+		  y%=10;
+		System.out.println("last value:"+y);
+//		
+// sqr  root
+		Scanner sc= new Scanner(System.in);
+     	System.out.println("Enter the value");
+		double m= sc.nextDouble();
+		double formula= Math.sqrt(m);
+		System.out.println("Sqrt:"+formula);
+////		triangle
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the height");
+		double height= sc.nextDouble();
+		System.out.println("Enter the  width");
+		double width= sc.nextDouble();
+	    double formula=(0.5*height*width);
+	    System.out.println("area"+formula);
+//	    kilometer to miles
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the Kilometer");
+		double kilometer=sc.nextDouble();
+		double mile=(kilometer*0.63);
+		System.out.println("miles:"+mile);
+//		celsius to farhen
+      	Scanner sc= new Scanner(System.in);
+		System.out.println("enter the celsius");
+        double cel=sc .nextDouble();
+        double fahrenheit=((cel*1.8)+32);
+        System.out.println("fahrenheit:"+fahrenheit);
+//		Qudratic function(u+i)^2
+//	Scanner sc= new Scanner(System.in);
+	    System.out.println("Enter the value of u");
+		int u = sc.nextInt();
+     	System.out.println("Enter the value of b");
+		int b = sc.nextInt();
+		double answer= (Math.pow(u, 2)+Math.pow(b, 2)+(2*u*b));
+		System.out.println("answer :"+ answer);
+	
+//
+//	(u-i)^2
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value of u");
+		int u = sc.nextInt();
+		System.out.println("Enter the value of b");
+	     int b = sc.nextInt();
+		double answer= (Math.pow(u, 2)+Math.pow(b, 2)-(2*u*b));
+		System.out.println("answer :"+ answer);
+	
+        
+//(u*i)^2
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the value of u");
+		int u = sc.nextInt();
+	System.out.println("Enter the value of b");
+		int b = sc.nextInt();
+		double answer= (Math.pow(u, 2)+Math.pow(b, 2)+(2*u*b));
+		System.out.println("answer :"+ answer);
+	
+         
+}
+}
