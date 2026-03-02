@@ -1,0 +1,94 @@
+package conditions;
+import java.util.*;
+public class Conditions {
+	public  static void main(String[]args) {
+//		Greater than 100
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter the number");
+		int a = sc.nextInt();
+		if(a>100)
+		{
+			System.out.println("The number is greater than 100");
+		}
+		
+//		check the number is less than 0
+		System.out.println("Enter the number");
+		int b= sc.nextInt();
+		if(b>0) {
+		System.out.println("The number is less than 0");
+		}
+		
+//		char is A
+		System.out.println(" enter the number");
+		char ch = sc.next().charAt(0);
+		if(ch=='A')
+		{
+			System.out.println("The given char is A");
+		}
+//		if divisble by 7
+		System.out.println("enter the number");
+		int num= sc.nextInt();
+		if(num%7==0) {
+			System.out.println("the num checis divisble by 7");
+		}
+//	check mark is excatly 100
+		System.out.println("enter the number");
+		int mark = sc.nextInt();
+		if(mark==100) {
+			System.out.println("the mark is exactly 100");
+		}
+//		string length is 5
+		String str= sc.next();
+		if(str.length()>5) {
+			System.out.println("The String is greater than 5");
+		}
+//		salary is equal to 25000
+		System.out.println("enter the number");
+		int salary= sc.nextInt();
+		if(salary==25000) {
+			System.out.println("The salary is equal to 25000");
+		}
+//		check the pin 
+		System.out.println(" enter the pin");
+		String pin= sc.next();
+		if(pin.equals("abc@1412")) {
+			System.out.println("Use the crct pin");
+		}
+//		check the three digit number
+		System.out.println("enter the number");
+		int num1= sc.nextInt();
+		if(num1==100 && num1==999) {
+			System.out.println("The crct three digit number");
+		}
+//		divisble by 2 and 3
+		System.out.println("enter the number");
+		int num2= sc.nextInt();
+		if(num2%2==0 && num2%3==0) {
+			System.out.println("The num is divisble by both 2 and 3");
+		}
+//		char is at @
+		System.out.println("enter the number");
+		char ch1 = sc.next().charAt('0');
+		if(ch1=='@') {
+			System.out.println("The given char is @");
+		}
+//			check the temp equals to 0C
+		System.out.println("Enter the temperature");
+		int x= sc.nextInt();
+		if(x==0) {
+			System.out.println("The temperature is at 0 degree");
+		}
+// check year is 2024
+		System.out.println("Enter the Year");
+		int Year = sc.nextInt();
+		if (Year==2024) {
+			System.out.println("Check the year is 2024");
+		}
+//		Account  balance is zero
+		System.out.println("Enter the Balance");
+		int account= sc.nextInt();
+		if (account==0) {
+			System.out.println("The account Balance is zero");
+		}
+	}
+}
