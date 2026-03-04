@@ -1,0 +1,157 @@
+package Loop;
+import java.util.*;
+
+public class Loop {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+// print num btw 1 to N
+		System.out.println("Enter the number"); 
+		int n = sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			System.out.println(i);
+		}
+//		print num btw n to 1
+		System.out.println("Enter the number");
+		int a= sc.nextInt();
+		for(int i=1;i<=n;i++) {
+			System.out.println(i);
+		}
+//		print even numbers btw 1 and n
+		System.out.println("Enter the number");
+		int n = sc.nextInt();
+		
+		for(int i=1;i<=n;i++) {
+			if(i%2==0)
+		System.out.println(i);
+	}
+//		find sum of first N natural numbers
+		System.out.println("enter the number");
+		int n= sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=n;i++) {
+			sum+=i;
+		}
+		System.out.println(sum);
+	}
+//		/sum of the digits of number
+		System.out.println("Enter the num");
+		int a= sc.nextInt();
+		int sum=0;
+		while(a!=0) {
+			int digit= a%10;
+			sum= sum+digit;
+			a/=10;
+		}
+		System.out.println(sum);	
+}
+////		Armstrong number
+		System.out.println("Enter a number");
+		int a = sc.nextInt();
+		int num=a, c=0,sum=0;
+		while(a>0) {
+			a/=10;
+			c++;
+			
+		}
+		a=num;
+		while(a>0) {
+			sum+=Math.pow((a%10),c);
+			a/=10;
+//			
+		}
+		if(sum==num) {
+			System.out.println("Armstrong number");
+		}
+		else {
+			System.out.println("Not a Armstrong number");
+		}		
+
+////             perfect number
+             System.out.println("Enter the number");
+             int x = sc.nextInt();
+             int sum=0;
+             for(int i=1;i<=x;i++) {
+            	 if(x%i==0) {
+            		 sum= sum+i;
+            	 }
+             }
+             if(sum==num) {
+            	 System.out.println("Its perfect num");
+             }
+             else {
+            	 System.out.println("Not a perfect num");
+}
+//		factorial num
+		System.out.println("Enter the num");
+		int n = sc.nextInt();
+		int fact =1;
+		for(int i=1;i<=n;i++) {
+			fact = fact*i;
+			
+		}
+	System.out.println("Factorial of"+n+"is :"+fact);
+//	Reverse 
+		        System.out.print("Enter a number: ");
+		        int num = sc.nextInt();
+
+		        int reverse = 0;
+
+		        for (; num != 0; num = num / 10) {
+		            int digit = num % 10;          // get last digit
+		            reverse = reverse * 10 + digit;
+		        }
+
+		        System.out.println("Reversed number is: " + reverse);
+//	palindrome
+		        
+		                int original = num;
+		                int rev = 0;
+
+		                while (num != 0) {
+		                    rev = rev * 10 + (num % 10);
+		                    num = num / 10;
+		                }
+
+		                return original == rev;
+		            }
+
+		                Scanner sc = new Scanner(System.in);
+		                int n = sc.nextInt();
+
+		                if (isPalindrome(n)) {
+		                    System.out.println("YES");
+		                }
+		                
+		                 {
+		                    System.out.println("NO");
+		                 }
+//		                 faboniccs series
+		                 System.out.println("Enter the num");
+		                 int num1 = sc.nextInt();
+		                 int r = 0;
+		                 int g =1;
+		                 int w =0;
+		                 System.out.println("Fabonacci series");
+		                 for(int i=1;i<=num1;i++) {
+		                	 System.out.println(r+"");
+		                	 int w = r+g;
+		                	 int r =g;
+		                	 int g =r;
+		                 }
+//		                 prime num
+		          System.out.println("Enter the num");
+		          int num2= sc.nextInt();
+		          int c =0;
+		          for(int i=1; i<=num2;i++) {
+		        	  if(num%1==0) {
+                      c++;
+		        	  }
+		          }
+		          if(c==2) {
+		        	  System.out.println("Prime num");
+		          }
+		          else {
+		        	  System.out.println("Not a prime num");
+		          }
+		          }
+		          }
